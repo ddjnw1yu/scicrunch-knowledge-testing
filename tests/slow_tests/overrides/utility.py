@@ -10,6 +10,9 @@ HEADERS = {'Content-Type': 'application/json'}
 MALE_UUID = get_variables('MALE_UUID')
 FEMALE_UUID = get_variables('FEMALE_UUID')
 RAT_UUID = get_variables('RAT_UUID')
+MOUSE_UUID = get_variables('MOUSE_UUID')
+PIG_UUID = get_variables('PIG_UUID')
+CAT_UUID = get_variables('CAT_UUID')
 SCKAN_VERSION = get_variables('SCKAN_VERSION')
 
 def cq_request(query: dict):

@@ -6,7 +6,10 @@ FLATMAP_ENDPOINT = Config.FLATMAP_ENDPOINT
 FLATMAPS = [
     'human-flatmap_male',
     'human-flatmap_female',
-    'rat-flatmap'
+    'rat-flatmap',
+    'mouse-flatmap',
+    'pig-flatmap',
+    'cat-flatmap'
 ]
 
 TESTING_VARIABLES = {}
@@ -24,6 +27,12 @@ def set_variables(data):
             TESTING_VARIABLES["FEMALE_UUID"] = value['uuid']
         elif key == 'rat-flatmap':
             TESTING_VARIABLES["RAT_UUID"] = value['uuid']
+        elif key == 'mouse-flatmap':
+            TESTING_VARIABLES["MOUSE_UUID"] = value['uuid']
+        elif key == 'pig-flatmap':
+            TESTING_VARIABLES["PIG_UUID"] = value['uuid']
+        elif key == 'cat-flatmap':
+            TESTING_VARIABLES["CAT_UUID"] = value['uuid']
 
 def get_latest_flatmap(data):
     latest_flatmap_dict = {}
